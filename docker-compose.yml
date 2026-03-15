@@ -1,0 +1,7 @@
+services:
+  beer-alerter:
+    build: .
+    restart: unless-stopped
+    shm_size: 256m
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
