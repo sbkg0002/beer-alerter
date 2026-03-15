@@ -12,7 +12,7 @@ brewers:
   - "Verdant"
 
 ntfy:
-  topic: "zaohome"
+  topic: "mytopic"
   base_url: "https://ntfy.sh" # override for self-hosted ntfy instance
   priority: "default" # min | low | default | high | max
   tags:

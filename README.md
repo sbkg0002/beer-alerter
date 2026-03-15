@@ -18,11 +18,11 @@ cp config.example.yaml config.yaml
 ```yaml
 scrape:
   url: "https://untappd.com/v/brouwcafe-de-molen/75672"
-  draft_section: "on draft"       # case-insensitive substring match on section heading
+  draft_section: "on draft" # case-insensitive substring match on section heading
   page_timeout_seconds: 30
 
 schedule:
-  cron: "*/30 * * * *"           # standard 5-field cron; every 30 minutes
+  cron: "*/30 * * * *" # standard 5-field cron; every 30 minutes
 
 brewers:
   - "De Molen"
@@ -30,8 +30,8 @@ brewers:
 
 ntfy:
   topic: "your-topic"
-  base_url: "https://ntfy.sh"    # override for self-hosted ntfy
-  priority: "default"             # min | low | default | high | max
+  base_url: "https://ntfy.sh" # override for self-hosted ntfy
+  priority: "default" # min | low | default | high | max
   tags:
     - "beer"
     - "tada"
@@ -56,10 +56,10 @@ docker run -d \
 
 ## Flags
 
-| Flag | Description |
-|------|-------------|
-| `--once` | Run once and exit instead of starting the scheduler |
-| `--verbose` | Enable debug logging |
+| Flag                 | Description                                                  |
+| -------------------- | ------------------------------------------------------------ |
+| `--once`             | Run once and exit instead of starting the scheduler          |
+| `--verbose`          | Enable debug logging                                         |
 | `--dump-html <path>` | Write rendered page HTML to a file (for debugging selectors) |
 
 ## Debugging

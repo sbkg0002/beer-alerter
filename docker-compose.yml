@@ -1,7 +1,8 @@
 services:
   beer-alerter:
-    build: .
+    # build: .
+    image: sbkg0002/beer-alerter:latest
     restart: unless-stopped
-    shm_size: 256m
+    shm_size: 64m
     volumes:
       - ./config.yaml:/app/config.yaml:ro
